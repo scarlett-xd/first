@@ -1,0 +1,38 @@
+we are learning command line and git .
+What is Git?
+Git is a version control system. It helps you keep track of changes in your code or project files and allows you to collaborate with others easily.Imagine you're working on a blog website project, and you accidentally mess something up. If your project is being tracked with Git, you can roll back to an earlier version like a "save point" in a game.
+Git is widely used by developers for teamwork because it allows multiple people to work on the same project without messing up each other's work.
+
+What is the Command Line?
+The command line (also called the terminal or shell) is a way to interact with your computer using text-based commands instead of clicking through a graphical interface.
+In Windows, tools like Git Bash or Command Prompt (cmd) are examples of command lines.
+
+Are Git and the Command Line Connected?
+Yes, absolutely! Git can be used in graphical apps (like GitHub Desktop), but the command line is the most powerful and common way to use Git.
+Git Bash is particularly useful because it combines Git functionality with command-line navigation.
+>>
+
+pwd => to check the current working directory
+ls => to list file in the current directory
+cd => change directory
+touch => to create file
+/ => root directory
+mkdir => to make directory
+
+git init =>  This command initializes a Git repository in your project folder. It creates a hidden .git folder where Git stores all its tracking information.
+
+git status =>
+This command shows the current state of your project, including:
+Files you've changed
+Files you've staged for commit
+Files Git isn't tracking yet
+
+git add => This command stages files for the next commit. When you make changes, Git doesn't directly save them. You first stage those changes using git add.
+(git add filename)
+
+staging files => 
+The staging area is like a "waiting room" for your changes.
+When you run git add, your changes are placed in this "waiting room."
+Only staged files will be part of your next commit.
+
+git commit -m  some message =>> save changes
