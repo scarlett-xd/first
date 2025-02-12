@@ -36,3 +36,43 @@ When you run git add, your changes are placed in this "waiting room."
 Only staged files will be part of your next commit.
 
 git commit -m  some message =>> save changes
+
+git log = to check whether commit is done or not
+
+git diff => to check what is the difference between the last and current version of git(current version means any modification to the file).
+git checkout file name => rollback to the last version.
+
+git rm --cached -r => to remove all the files from staging area.
+
+gitignore => use to ignore files that are inside the gitignore file . we have to create this file in the working directory or folder
+
+=>> .gitignore is a special file that tells Git which files or folders to ignore (not track) in a repository.
+This is useful when you have files like:
+✅ Logs (.log)
+✅ Temporary files (.tmp)
+✅ Node modules (node_modules/)
+✅ Environment files (.env) containing sensitive info
+=>> touch .gitignore
+=>> Open the .gitignore file and add the file/folder names you want Git to ignore.
+
+Example:
+node_modules/   # Ignore dependencies folder
+.env            # Ignore environment variables
+*.log           # Ignore all log files
+*.tmp           # Ignore all temporary files
+
+=>> git status // to check whether git is ignoring files or not
+
+=>> If a file is already tracked, adding it to .gitignore won't remove it. You need to untrack it:
+     git rm --cached filename
+
+cloning => use git clone URL (url of the project you want to copy)
+
+git branch =>>to check the current branch
+git branch branchname =>> to create a branch
+git checkout branchname =>> to switch the branch
+🛤 Branching = Creating a separate workspace in Git
+🛠 Why? = To work on new features/fixes without disturbing the main project
+🔄 How? = git branch, git checkout, git merge
+
+git  merge branchname =>> to merge the file with main branch
